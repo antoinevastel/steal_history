@@ -1,0 +1,27 @@
+#test-area {
+	position: fixed;
+	top: 0; left: 0;
+	right: 0; bottom: 0;
+	z-index: -1;
+	filter: blur(30px) blur(30px) opacity(0%);
+	-webkit-filter: blur(30px) blur(30px) opacity(0%);
+	pointer-events: none;
+}
+#test-area > a {
+  	color: green;
+}
+#test-area > a:visited {
+  	color: red;
+}
+#links > li::before {
+	  font-family: monospace;
+	  margin-right: 5px;
+	  content: "[ ]";
+}
+#links > li.visited::before {
+  	content: "[v]";
+}
+.details {
+	  font-size: 80%;
+	  color: gray;
+}
